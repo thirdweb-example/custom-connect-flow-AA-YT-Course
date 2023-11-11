@@ -143,3 +143,60 @@
 .logo img {
   filter: invert(1);
 }
+
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.centeredCard {
+  background-color: #232323;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  min-width: 500px;
+  overflow: none;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.centeredCard h1 {
+  margin-bottom: 0px;
+}
+.centeredCard input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  height: 48px;
+  font-size: 16px;
+}
+.centeredCard button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+.centeredCard button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
+.centeredCard button:hover {
+  background-color: teal;
+}
